@@ -1,0 +1,25 @@
+SERVEUR:
++les arguments sont gérés
++se créer
++receptionne les clients
+-ne gere pas les clients en trop pour l'instant (car peut-etre mode spec)
+-ne gere pas les "go" (un principe de lancement de partie si la majorité veut le debut de la parti)
++creation d'une structure pour identifier les descriptif des clients pour savoir le nombre de joueur présent dessus(pour le recv() c'est un important)
+    (dans common.h)
++reception de la structure nouveaux clients avec le nb de joueur
++gere le nb de joueur qui arrive au fur et a mesure
++Initialisation du tableau de joueurs
++lien entre les descriptif et les joueurs 
+	(pour que ca soit plus rapide pour les recv() )
+
+CLIENT:
+
++se connect au serveur 
+    (ATTENTION IL Y A UN PB AVEC LES ADRESSES)
++envoies les init_client proprement
++reception d'un message qui valide l'arrive du client sur le serveur(peut-etre a supr mais c'est pratique pour les tests)
+
+
+COMMON:
++ajout struct client serveur pour une utilisation plus fluide des recv
++ajout de la structure joueur
